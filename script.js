@@ -28,36 +28,39 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// ===== Active nav link on scroll =====
+// ===== Active nav link on scroll (optimised) =====
+// Cache sections and links once; clear actives once per scroll tick
+const sections = Array.from(document.querySelectorAll('section[id]'));
+const allNavLinks = Array.from(navLinks.querySelectorAll('a'));
+
 function updateActiveNav() {
-  const sections = document.querySelectorAll('section[id]');
   const scrollPos = window.scrollY + 80;
-  const links = navLinks.querySelectorAll('a');
-  let newActive = null;
+  let activeLinkFound = false;
 
-  sections.forEach(section => {
-    const top = section.offsetTop;
-    const height = section.offsetHeight;
-    const id = section.getAttribute('id');
-    const link = navLinks.querySelector(`a[href="#${id}"]`);
-
-    if (link && scrollPos >= top && scrollPos < top + height) {
-      newActive = link;
+  for (let i = sections.length - 1; i >= 0; i--) {
+    if (scrollPos >= sections[i].offsetTop) {
+      const id = sections[i].getAttribute('id');
+      const link = allNavLinks.find(l => l.getAttribute('href') === `#${id}`);
+      if (link) {
+        allNavLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+        activeLinkFound = true;
+      }
+      break;
     }
-  });
+  }
 
-  if (newActive) {
-    links.forEach(l => l.classList.remove('active'));
-    newActive.classList.add('active');
+  if (!activeLinkFound) {
+    allNavLinks.forEach(l => l.classList.remove('active'));
   }
 }
 
 // ===== Typed text effect =====
 const typedTexts = [
-  'Web Developer',
-  'UI/UX Designer',
-  'Problem Solver',
-  'Creative Coder'
+  'Paralegal Student',
+  'Legal Researcher',
+  'Document Specialist',
+  'Aspiring Attorney\'s Assistant'
 ];
 let typedIndex = 0;
 let charIndex = 0;
@@ -126,7 +129,6 @@ const formSuccess = document.getElementById('formSuccess');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    // Simulate form submission (replace with real endpoint as needed)
     const btn = contactForm.querySelector('.form-submit');
     btn.textContent = 'Sending...';
     btn.disabled = true;
@@ -140,3 +142,4 @@ if (contactForm) {
     }, 1200);
   });
 }
+

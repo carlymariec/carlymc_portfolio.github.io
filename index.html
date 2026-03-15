@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Carly Marie – Web Developer &amp; Designer. Personal portfolio showcasing projects, skills, and contact information." />
-  <title>Carly Marie | Portfolio</title>
+  <meta name="description" content="Carly Marie — Paralegal Student &amp; Legal Professional. Portfolio showcasing paralegal education, skills, and assignments." />
+  <title>Carly Marie | Paralegal Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,11 +16,17 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#assignments">Assignments</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -30,20 +36,22 @@
   <section class="hero" id="home">
     <div class="hero-content">
       <div class="hero-text">
-        <span class="hero-greeting">Hello, World! 👋</span>
+        <span class="hero-eyebrow">Paralegal Professional</span>
         <h1 class="hero-name">Carly Marie</h1>
-        <p class="hero-title">I'm a <span class="typed"></span></p>
+        <p class="hero-subtitle-line">
+          I am a <span class="typed-wrap"><span class="typed"></span></span>
+        </p>
         <p class="hero-description">
-          Passionate about crafting beautiful, responsive, and user-friendly web
-          experiences. I turn ideas into digital reality — one line of code at a time.
+          Detail-oriented paralegal student with a passion for law, justice, and
+          advocacy. I bring strong research, writing, and organizational skills
+          to every legal matter I tackle.
         </p>
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          <a href="#assignments" class="btn btn-gold">View Assignments</a>
+          <a href="#resume" class="btn btn-outline">My Resume</a>
         </div>
         <div class="hero-social">
           <a href="https://github.com/Carlymarie992" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <!-- GitHub SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577
                 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756
@@ -56,8 +64,7 @@
                 3.293 0 .322.216.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/>
             </svg>
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <!-- LinkedIn SVG -->
+          <a href="https://www.linkedin.com/in/carlymarie" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M20.447 20.452H17.02v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853
                 0-2.136 1.445-2.136 2.939v5.667H9.607V9h3.28v1.561h.046c.477-.9 1.637-1.85
@@ -67,8 +74,7 @@
                 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
           </a>
-          <a href="mailto:carly@example.com" aria-label="Email">
-            <!-- Email SVG -->
+          <a href="mailto:carly@example.com" aria-label="Send email to Carly">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="2" y="4" width="20" height="16" rx="2"/>
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
@@ -77,7 +83,16 @@
         </div>
       </div>
       <div class="hero-image-wrap">
-        <div class="hero-avatar" role="img" aria-label="Profile illustration">👩‍💻</div>
+        <div class="hero-badge-ring">
+          <div class="hero-avatar" role="img" aria-label="Illustration of a legal professional">
+            <span aria-hidden="true">⚖️</span>
+            <span class="visually-hidden">Scales of justice illustration</span>
+          </div>
+          <div class="hero-stat-chips">
+            <span class="hero-chip">Paralegal Student</span>
+            <span class="hero-chip">Legal Research</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -86,30 +101,39 @@
   <section class="section about" id="about">
     <div class="container">
       <h2 class="section-title fade-in">About <span>Me</span></h2>
-      <p class="section-subtitle fade-in">A little bit about who I am</p>
+      <p class="section-subtitle fade-in">Get to know the person behind the portfolio</p>
+      <div class="section-divider"></div>
       <div class="about-grid">
         <div class="about-image-wrap fade-in">
-          <div class="about-card">
-            <div class="card-icon">🎯</div>
-            <h3>My Focus</h3>
+          <div class="about-highlight-card">
+            <div class="about-icon-circle">⚖️</div>
+            <h3>My Legal Passion</h3>
             <p>
-              I specialize in building clean, modern web applications with a focus on
-              performance, accessibility, and exceptional user experience. Every project
-              is an opportunity to craft something meaningful.
+              I'm driven by a deep commitment to justice and the belief that everyone
+              deserves skilled, compassionate legal support. My paralegal studies
+              have sharpened my ability to research complex issues, draft precise
+              documents, and support attorneys effectively.
             </p>
+            <div class="card-tag-row">
+              <span class="card-tag">Legal Research</span>
+              <span class="card-tag">Document Drafting</span>
+              <span class="card-tag">Client Advocacy</span>
+            </div>
           </div>
         </div>
         <div class="about-text fade-in">
           <h3>Hi, I'm Carly Marie!</h3>
           <p>
-            I'm a passionate web developer and designer with a love for creating
-            digital experiences that make people's lives easier and more enjoyable.
-            I thrive at the intersection of design and technology.
+            I am a dedicated paralegal student with a genuine passion for law and
+            a commitment to helping others navigate the legal system. My academic
+            journey has given me hands-on experience with legal research, case
+            preparation, and document management.
           </p>
           <p>
-            When I'm not coding, you'll find me exploring new design trends, contributing
-            to open-source projects, or enjoying a good cup of coffee while brainstorming
-            my next big idea.
+            I thrive on the details — whether it's dissecting a contract, crafting
+            a thorough legal memo, or building an organized case file. Outside of
+            my studies, I enjoy keeping up with developments in civil rights law,
+            family law, and access-to-justice initiatives.
           </p>
           <div class="about-facts">
             <div class="fact-item">
@@ -117,16 +141,16 @@
               <div class="fact-value">United States</div>
             </div>
             <div class="fact-item">
+              <div class="fact-label">Status</div>
+              <div class="fact-value">Paralegal Student</div>
+            </div>
+            <div class="fact-item">
               <div class="fact-label">Availability</div>
-              <div class="fact-value">Open to Work</div>
+              <div class="fact-value">Open to Opportunities</div>
             </div>
             <div class="fact-item">
-              <div class="fact-label">Experience</div>
-              <div class="fact-value">2+ Years</div>
-            </div>
-            <div class="fact-item">
-              <div class="fact-label">Education</div>
-              <div class="fact-value">Computer Science</div>
+              <div class="fact-label">Focus Areas</div>
+              <div class="fact-value">Civil &amp; Family Law</div>
             </div>
           </div>
         </div>
@@ -134,117 +158,266 @@
     </div>
   </section>
 
-  <!-- ===== Skills ===== -->
-  <section class="section skills" id="skills">
+  <!-- ===== Education & Skills ===== -->
+  <section class="section education" id="education">
     <div class="container">
-      <h2 class="section-title fade-in">My <span>Skills</span></h2>
-      <p class="section-subtitle fade-in">Technologies and tools I work with</p>
-      <div class="skills-grid">
-        <div class="skill-category fade-in">
-          <div class="skill-category-icon">🎨</div>
-          <h3>Frontend</h3>
+      <h2 class="section-title fade-in">Education &amp; <span>Skills</span></h2>
+      <p class="section-subtitle fade-in">Coursework and competencies from my paralegal program</p>
+      <div class="section-divider"></div>
+      <div class="edu-grid">
+
+        <div class="edu-card fade-in">
+          <div class="edu-card-icon">📜</div>
+          <h3>Legal Research &amp; Writing</h3>
+          <div class="edu-course">Core Competency</div>
+          <p>Conducting thorough statutory, case law, and secondary source research using Westlaw, LexisNexis, and law libraries. Drafting clear, accurate legal documents.</p>
           <div class="skill-tags">
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Westlaw</span>
+            <span class="skill-tag">LexisNexis</span>
+            <span class="skill-tag">Legal Memos</span>
+            <span class="skill-tag">Case Briefs</span>
+            <span class="skill-tag">Shepardizing</span>
           </div>
         </div>
-        <div class="skill-category fade-in">
-          <div class="skill-category-icon">⚙️</div>
-          <h3>Backend</h3>
+
+        <div class="edu-card fade-in">
+          <div class="edu-card-icon">⚖️</div>
+          <h3>Civil Procedure</h3>
+          <div class="edu-course">Litigation Support</div>
+          <p>Understanding of federal and state court procedures, including pleadings, discovery, motions practice, and trial preparation support.</p>
           <div class="skill-tags">
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Pleadings</span>
+            <span class="skill-tag">Discovery</span>
+            <span class="skill-tag">Motions</span>
+            <span class="skill-tag">Court Filing</span>
+            <span class="skill-tag">Docketing</span>
           </div>
         </div>
-        <div class="skill-category fade-in">
-          <div class="skill-category-icon">🛠️</div>
-          <h3>Tools & Workflow</h3>
+
+        <div class="edu-card fade-in">
+          <div class="edu-card-icon">📋</div>
+          <h3>Contracts &amp; Torts</h3>
+          <div class="edu-course">Substantive Law</div>
+          <p>Analysis of contract formation, breach, and remedies; tort liability principles including negligence, intentional torts, and strict liability.</p>
           <div class="skill-tags">
-            <span class="skill-tag">Git &amp; GitHub</span>
-            <span class="skill-tag">VS Code</span>
-            <span class="skill-tag">Figma</span>
-            <span class="skill-tag">npm</span>
-            <span class="skill-tag">Webpack</span>
+            <span class="skill-tag">Contract Analysis</span>
+            <span class="skill-tag">Tort Law</span>
+            <span class="skill-tag">Liability Review</span>
+            <span class="skill-tag">Case Analysis</span>
           </div>
         </div>
-        <div class="skill-category fade-in">
-          <div class="skill-category-icon">☁️</div>
-          <h3>Deployment</h3>
+
+        <div class="edu-card fade-in">
+          <div class="edu-card-icon">👨‍👩‍👧</div>
+          <h3>Family Law</h3>
+          <div class="edu-course">Practice Area</div>
+          <p>Marriage, divorce, child custody, support, adoption, and domestic relations matters. Drafting family law pleadings and settlement agreements.</p>
           <div class="skill-tags">
-            <span class="skill-tag">GitHub Pages</span>
-            <span class="skill-tag">Netlify</span>
-            <span class="skill-tag">Vercel</span>
-            <span class="skill-tag">Heroku</span>
+            <span class="skill-tag">Divorce Pleadings</span>
+            <span class="skill-tag">Custody Agreements</span>
+            <span class="skill-tag">Child Support</span>
+            <span class="skill-tag">Adoption</span>
           </div>
         </div>
+
+        <div class="edu-card fade-in">
+          <div class="edu-card-icon">🔒</div>
+          <h3>Criminal Law &amp; Procedure</h3>
+          <div class="edu-course">Practice Area</div>
+          <p>Elements of crimes, defenses, constitutional protections, and criminal procedure from arrest through sentencing. Supporting defense and prosecution teams.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Criminal Procedure</span>
+            <span class="skill-tag">Constitutional Law</span>
+            <span class="skill-tag">Evidence Review</span>
+            <span class="skill-tag">Client Intake</span>
+          </div>
+        </div>
+
+        <div class="edu-card fade-in">
+          <div class="edu-card-icon">🗂️</div>
+          <h3>Document &amp; Case Management</h3>
+          <div class="edu-course">Administrative Skills</div>
+          <p>Organizing and maintaining client files, managing deadlines, preparing court bundles, and using legal practice management software.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Clio</span>
+            <span class="skill-tag">Microsoft Office</span>
+            <span class="skill-tag">File Organization</span>
+            <span class="skill-tag">Deadline Tracking</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== Projects ===== -->
-  <section class="section projects" id="projects">
+  <!-- ===== Assignments ===== -->
+  <section class="section assignments" id="assignments">
     <div class="container">
-      <h2 class="section-title fade-in">My <span>Projects</span></h2>
-      <p class="section-subtitle fade-in">Some things I've built</p>
-      <div class="projects-grid">
+      <h2 class="section-title fade-in">Recent <span>Assignments</span></h2>
+      <p class="section-subtitle fade-in">Selected work from my paralegal coursework</p>
+      <div class="section-divider"></div>
+      <div class="assignments-grid">
 
-        <article class="project-card fade-in">
-          <div class="project-img">🛒</div>
-          <div class="project-body">
-            <h3>E-Commerce Dashboard</h3>
-            <p>A full-featured admin dashboard for managing products, orders, and customers with real-time analytics and a clean, intuitive interface.</p>
-            <div class="project-tech">
-              <span class="tech-badge">React</span>
-              <span class="tech-badge">Node.js</span>
-              <span class="tech-badge">MongoDB</span>
-            </div>
-            <div class="project-links">
-              <button type="button" class="btn btn-primary" disabled aria-disabled="true">Live Demo</button>
-              <a href="https://github.com/Carlymarie992" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <article class="assignment-card fade-in">
+          <div class="assignment-banner purple-bg">
+            <span>📑</span>
+            <span class="assignment-type">Legal Memo</span>
+          </div>
+          <div class="assignment-body">
+            <h3>Contract Breach Legal Memorandum</h3>
+            <p>Researched and drafted a formal legal memorandum analyzing breach of contract claims, applicable precedents, and potential remedies for a hypothetical client matter.</p>
+            <div class="assignment-meta">
+              <span class="meta-badge">Contracts</span>
+              <span class="meta-badge">Legal Writing</span>
+              <span class="meta-badge">Westlaw</span>
             </div>
           </div>
         </article>
 
-        <article class="project-card fade-in">
-          <div class="project-img">🌤️</div>
-          <div class="project-body">
-            <h3>Weather App</h3>
-            <p>A beautiful weather application that fetches real-time data and shows a 7-day forecast with animated weather icons and location search.</p>
-            <div class="project-tech">
-              <span class="tech-badge">JavaScript</span>
-              <span class="tech-badge">OpenWeather API</span>
-              <span class="tech-badge">CSS3</span>
-            </div>
-            <div class="project-links">
-              <button type="button" class="btn btn-primary" disabled aria-disabled="true">Live Demo</button>
-              <a href="https://github.com/Carlymarie992" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <article class="assignment-card fade-in">
+          <div class="assignment-banner gold-bg">
+            <span>📂</span>
+            <span class="assignment-type">Case Brief</span>
+          </div>
+          <div class="assignment-body">
+            <h3>Case Brief — Palsgraf v. Long Island R.R.</h3>
+            <p>Prepared a comprehensive case brief covering facts, procedural history, issues, holding, and legal reasoning for this landmark proximate cause decision.</p>
+            <div class="assignment-meta">
+              <span class="meta-badge">Torts</span>
+              <span class="meta-badge">Case Analysis</span>
+              <span class="meta-badge">Common Law</span>
             </div>
           </div>
         </article>
 
-        <article class="project-card fade-in">
-          <div class="project-img">📝</div>
-          <div class="project-body">
-            <h3>Task Manager</h3>
-            <p>A productivity app to organize tasks with drag-and-drop boards, priority labels, due dates, and local storage persistence.</p>
-            <div class="project-tech">
-              <span class="tech-badge">React</span>
-              <span class="tech-badge">TypeScript</span>
-              <span class="tech-badge">Local Storage</span>
-            </div>
-            <div class="project-links">
-              <button type="button" class="btn btn-primary" disabled aria-disabled="true">Live Demo</button>
-              <a href="https://github.com/Carlymarie992" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <article class="assignment-card fade-in">
+          <div class="assignment-banner teal-bg">
+            <span>👨‍👩‍👧</span>
+            <span class="assignment-type">Pleading Draft</span>
+          </div>
+          <div class="assignment-body">
+            <h3>Petition for Dissolution of Marriage</h3>
+            <p>Drafted a complete family law petition including child custody, support, property division, and spousal maintenance sections with proper court formatting.</p>
+            <div class="assignment-meta">
+              <span class="meta-badge">Family Law</span>
+              <span class="meta-badge">Drafting</span>
+              <span class="meta-badge">Civil Procedure</span>
             </div>
           </div>
         </article>
 
+        <article class="assignment-card fade-in">
+          <div class="assignment-banner orange-bg">
+            <span>🔍</span>
+            <span class="assignment-type">Research Project</span>
+          </div>
+          <div class="assignment-body">
+            <h3>Fourth Amendment Search &amp; Seizure Analysis</h3>
+            <p>Conducted an in-depth statutory and case law research project examining the evolution of Fourth Amendment protections and their application to digital evidence.</p>
+            <div class="assignment-meta">
+              <span class="meta-badge">Criminal Law</span>
+              <span class="meta-badge">Constitutional Law</span>
+              <span class="meta-badge">Research</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="assignment-card fade-in">
+          <div class="assignment-banner blue-bg">
+            <span>📝</span>
+            <span class="assignment-type">Discovery</span>
+          </div>
+          <div class="assignment-body">
+            <h3>Interrogatories &amp; Request for Production</h3>
+            <p>Prepared a full set of interrogatories, requests for production of documents, and requests for admissions for a personal injury litigation simulation.</p>
+            <div class="assignment-meta">
+              <span class="meta-badge">Civil Litigation</span>
+              <span class="meta-badge">Discovery</span>
+              <span class="meta-badge">Drafting</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="assignment-card fade-in">
+          <div class="assignment-banner green-bg">
+            <span>🏠</span>
+            <span class="assignment-type">Transaction</span>
+          </div>
+          <div class="assignment-body">
+            <h3>Real Property Purchase Agreement Review</h3>
+            <p>Analyzed a residential purchase agreement for potential legal issues, contingencies, title concerns, and closing requirements in a simulated real estate transaction.</p>
+            <div class="assignment-meta">
+              <span class="meta-badge">Property Law</span>
+              <span class="meta-badge">Contract Review</span>
+              <span class="meta-badge">Transaction</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Resume ===== -->
+  <section class="section resume-section" id="resume">
+    <div class="container">
+      <h2 class="section-title fade-in">My <span>Resume</span></h2>
+      <p class="section-subtitle fade-in">An overview of my education, experience, and qualifications</p>
+      <div class="section-divider"></div>
+      <div class="resume-inner">
+        <div class="resume-visual fade-in">
+          <div class="resume-icon-wrap">📄</div>
+          <h3>Carly Marie</h3>
+          <p>Paralegal Student &amp; Aspiring Legal Professional</p>
+          <a href="#contact" class="btn btn-gold resume-download-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Request Resume
+          </a>
+        </div>
+        <div class="resume-highlights fade-in">
+          <h3>Highlights</h3>
+          <p>
+            Currently completing an ABA-approved paralegal studies program, building
+            a strong foundation in legal research, writing, and multiple practice areas.
+          </p>
+          <div class="resume-items">
+            <div class="resume-item">
+              <div class="resume-item-icon">🎓</div>
+              <div class="resume-item-content">
+                <div class="item-title">Paralegal Studies Program</div>
+                <div class="item-sub">ABA-Approved Certificate Program · In Progress</div>
+              </div>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-icon">📚</div>
+              <div class="resume-item-content">
+                <div class="item-title">Legal Research &amp; Writing</div>
+                <div class="item-sub">Proficient in Westlaw, LexisNexis &amp; Bluebook Citation</div>
+              </div>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-icon">⚖️</div>
+              <div class="resume-item-content">
+                <div class="item-title">Practice Area Knowledge</div>
+                <div class="item-sub">Civil Litigation · Family Law · Criminal Law · Property Law</div>
+              </div>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-icon">��️</div>
+              <div class="resume-item-content">
+                <div class="item-title">Case &amp; Document Management</div>
+                <div class="item-sub">Clio, Microsoft Office Suite, Court Filing Systems</div>
+              </div>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-icon">🤝</div>
+              <div class="resume-item-content">
+                <div class="item-title">Client &amp; Professional Communication</div>
+                <div class="item-sub">Strong written &amp; verbal communication skills</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -253,13 +426,14 @@
   <section class="section contact" id="contact">
     <div class="container">
       <h2 class="section-title fade-in">Get In <span>Touch</span></h2>
-      <p class="section-subtitle fade-in">Have a project in mind? Let's work together!</p>
+      <p class="section-subtitle fade-in">Interested in working together? I'd love to hear from you.</p>
+      <div class="section-divider"></div>
       <div class="contact-grid">
         <div class="contact-info fade-in">
-          <h3>Let's Talk</h3>
+          <h3>Let's Connect</h3>
           <p>
-            I'm always open to discussing new projects, creative ideas, or
-            opportunities to be part of something amazing. Drop me a message!
+            Whether you have a question about my background, want to discuss an
+            opportunity, or just want to say hello — my inbox is always open.
           </p>
           <div class="contact-items">
             <div class="contact-item">
@@ -270,22 +444,22 @@
               </div>
             </div>
             <div class="contact-item">
-              <div class="contact-item-icon">🐙</div>
-              <div class="contact-item-text">
-                <div class="label">GitHub</div>
-                <div class="value">github.com/Carlymarie992</div>
-              </div>
-            </div>
-            <div class="contact-item">
               <div class="contact-item-icon">💼</div>
               <div class="contact-item-text">
                 <div class="label">LinkedIn</div>
                 <div class="value">linkedin.com/in/carlymarie</div>
               </div>
             </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🐙</div>
+              <div class="contact-item-text">
+                <div class="label">GitHub</div>
+                <div class="value">github.com/Carlymarie992</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="contact-form fade-in">
+        <div class="contact-form-wrap fade-in">
           <form id="contactForm">
             <div class="form-row">
               <div class="form-group">
@@ -303,9 +477,9 @@
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+              <textarea id="message" name="message" placeholder="Your message..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            <button type="submit" class="btn btn-gold form-submit">Send Message</button>
             <div class="form-success" id="formSuccess" role="status" aria-live="polite">
               ✅ Message sent! I'll get back to you soon.
             </div>
@@ -318,17 +492,18 @@
   <!-- ===== Footer ===== -->
   <footer>
     <div class="container">
-      <p>Made with <span>♥</span> by Carly Marie &copy; <span id="year"></span></p>
+      <p>Made with <span class="heart">♥</span> by Carly Marie &copy; <span id="year"></span></p>
       <ul class="footer-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#assignments">Assignments</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </footer>
 
-  <!-- Scroll to top button -->
   <button id="scrollTop" aria-label="Scroll to top">&#8679;</button>
 
   <script src="script.js"></script>
