@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website hosted on GitHub Pages.
 
 ## 🌐 Live Site
 
-[https://carlymarie992.github.io](https://carlymarie992.github.io)
+[https://carlymc.github.io](https://carlymc.github.io)
 
 ## 📄 Sections
 
