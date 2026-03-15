@@ -1,25 +1,33 @@
-# Carly Marie — Personal Portfolio
+# Carly C | Paralegal Professional
 
-A modern, responsive personal portfolio website hosted on GitHub Pages.
+## ⚖️ Professional Profile
+Detail-oriented and research-focused Paralegal Student with a strong foundation in legal analysis, civil litigation, and criminal justice. I leverage technology to streamline legal workflows and ensure procedural accuracy. My work is defined by the rigorous application of the IRAC method and a commitment to objective, high-quality legal research.
 
-## 🌐 Live Site
+---
 
-[https://carlymc.github.io](https://carlymc.github.io)
+## 📚 Core Competencies
+*   **Legal Research & Writing:** Proficient in drafting legal memoranda, case briefs, and synthesizing complex case law.
+*   **Litigation Support:** Experienced in civil litigation procedures and criminal justice documentation.
+*   **Technical Proficiency:** Tech-savvy approach to legal databases, document management, and digital security.
+*   **Methodology:** Dedicated to the IRAC (Issue, Rule, Analysis, Conclusion) framework for all legal assignments.
 
-## 📄 Sections
+---
 
-- **Hero** — Introduction with animated typing effect
-- **About** — Background and personal facts
-- **Skills** — Technologies grouped by category
-- **Projects** — Showcase of featured work
-- **Contact** — Contact form and social links
+## 🚀 Philosophy of Practice
+My approach to the legal profession is rooted in the belief that justice is served through precision, efficiency, and unwavering ethical standards. I view the law as a system of logic. My work is driven by a commitment to providing the high-level support necessary to navigate complex legal landscapes, ensuring that attorneys have the clear, actionable data they need to advocate effectively for their clients.
 
-## 🛠️ Built With
+---
 
-- HTML5
-- CSS3 (custom properties, grid, flexbox, animations)
-- Vanilla JavaScript (Intersection Observer, typed effect)
+## 🛠 Technical Skills
+*   **Legal Tech:** LexisNexis, MS Office Suite, Adobe Acrobat Pro, vLex.
+*   **Digital Security:** Committed to data privacy, metadata sanitization, and secure document handling.
+*   **Workflow:** Efficient in remote collaboration and digital document management.
 
-## 🚫 Firebase
+---
 
-Firebase has been removed from this project. The `.gitignore` retains Firebase entries to prevent accidental commit of any Firebase config or debug files.
+## 🌐 Portfolio
+View my professional portfolio and educational milestones here:
+[https://carlymc_portfolio.github.io](https://carlymc_portfolio.github.io)
+
+---
+*Note: All documents and samples provided in this repository have been sanitized and redacted to protect client confidentiality and personal privacy.*
