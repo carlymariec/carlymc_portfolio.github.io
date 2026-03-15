@@ -1,4 +1,4 @@
-# Carly C | Paralegal Professional
+# Carly Marie | Paralegal Professional
 
 ## ⚖️ Professional Profile
 Detail-oriented and research-focused Paralegal Student with a strong foundation in legal analysis, civil litigation, and criminal justice. I leverage technology to streamline legal workflows and ensure procedural accuracy. My work is defined by the rigorous application of the IRAC method and a commitment to objective, high-quality legal research.
