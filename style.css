@@ -154,6 +154,13 @@ footer a { color: rgba(255,255,255,0.6); font-size: 0.9rem; text-decoration: und
 footer a:hover { color: var(--gold-light); text-decoration-color: var(--gold-light); }
 .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 1rem; }
 
+/* ===== Privacy Policy ===== */
+.privacy-content h3 { font-size: 1.2rem; font-weight: 800; color: var(--primary); margin: 2rem 0 0.6rem; }
+.privacy-content p { color: var(--text-muted); font-size: 1rem; margin-bottom: 1rem; line-height: 1.8; }
+.privacy-content a { color: var(--primary); font-weight: 600; }
+.privacy-content a:hover { color: var(--gold); }
+.privacy-list { list-style: disc; padding-left: 1.8rem; margin-bottom: 1rem; color: var(--text-muted); font-size: 1rem; line-height: 1.8; }
+
 /* ===== Scroll-to-top button ===== */ 
 #scrollTop { position: fixed; bottom: 2rem; right: 2rem; width: 50px; height: 50px; border-radius: 50%; background: var(--primary); color: var(--white); border: 2px solid rgba(255,255,255,0.15); font-size: 1.5rem; cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; transform: translateY(15px); transition: all var(--transition); box-shadow: 0 4px 15px rgba(0,0,0,0.25); z-index: 999; } 
 #scrollTop.show { opacity: 1; transform: none; } 
