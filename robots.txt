@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carlymariec.github.io/proportfolio.github.io/sitemap.xml
